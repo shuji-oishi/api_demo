@@ -59,7 +59,7 @@ export default async function handler(req, res) {
     const pool = await getPool();
     
     // クエリの実行（例：usersテーブルからデータを取得）
-    const query = 'SELECT * FROM users LIMIT 10';
+    const query = 'SELECT * FROM wp_posts LIMIT 10';
     console.log(`Executing query: ${query}`);
     
     const [rows] = await pool.query(query);
